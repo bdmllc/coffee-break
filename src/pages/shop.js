@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="shop"
-      styleClass="default-background"
+      styleClass="shop"
     />
     <Products />
     <Info />
@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "tom-shop-hero-pic.jpeg" }) {
+    img: file(relativePath: { eq: "tom-shop-hero-banner.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG

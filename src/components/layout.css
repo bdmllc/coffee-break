@@ -71,6 +71,20 @@ h6 {
   background-size: cover;
   /* background-attachment: fixed; */
 }
+.shop {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.842),
+    rgba(255, 255, 255, 0.842),
+    rgba(255, 255, 255, 0.842)
+  );
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
 .about-background {
   min-height: 50vh;
   display: flex;
