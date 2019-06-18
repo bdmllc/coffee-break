@@ -5,15 +5,13 @@ import { StaticQuery, graphql } from "gatsby"
 
 const getProducts = graphql`
   {
-    products: allContentfulCuisineItem {
+    products: allContentfulApparel {
       edges {
         node {
-          id
           title
           price
           image {
             fluid(maxHeight: 426) {
-              src
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
@@ -22,6 +20,7 @@ const getProducts = graphql`
     }
   }
 `
+
 export default function Products() {
   return (
     <StaticQuery
