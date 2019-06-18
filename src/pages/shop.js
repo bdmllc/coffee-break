@@ -9,11 +9,11 @@ import Products from "../components/Home/Products"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Drinks | Affordable Drinking Options In Miami: 2019" />
+    <SEO title="Shop | New Tour-O-Miami Shirts and Hoodies" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Drinks"
-      styleClass="drinks"
+      title="shop"
+      styleClass="default-background"
     />
     <Products />
     <Info />
@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "default-background.jpeg" }) {
+    img: file(relativePath: { eq: "tom-shop-hero-pic.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
