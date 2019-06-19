@@ -1,7 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Section = styled.section`
-padding: 2rem 0;
-width:90vw;
-margin: 0 auto;
+  padding: 0.25rem 1rem 3rem 1rem;
+
+  width: 90vw;
+  margin: 0 auto;
+  border-color: #ededed;
 `

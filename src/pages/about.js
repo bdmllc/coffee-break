@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => (
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
               We're a vibrant group of millenials driven to mold a new and more
-              sustanable world for us generations to come.
+              sustanable world for us and generations to come.
               <br />
               <br />
               We hope our new website provides tourists and locals alike the

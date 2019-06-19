@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 import Services from "../components/Home/Services"
-import Menu from "../components/Home/Menu"
+import Gallery from "../components/Home/Gallery"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -17,9 +17,8 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Services />
-
+    <Gallery />
     <Info styleClass="contact" />
-    <Menu items={data.menu} />
   </Layout>
 )
 

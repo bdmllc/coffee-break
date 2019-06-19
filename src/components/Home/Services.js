@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
 import { FaUtensils, FaBeer, FaBus } from "react-icons/fa"
+import { Link } from "gatsby"
 
 export default class Services extends Component {
   state = {
@@ -31,7 +32,9 @@ export default class Services extends Component {
           {this.state.services.map((item, index) => {
             return (
               <article key={index} className="service">
-                <span>{item.icon}</span>
+                <Link to="/food/">
+                  <span>{item.icon}</span>
+                </Link>
                 <h6>{item.title}</h6>
                 <p>{item.info}</p>
               </article>
