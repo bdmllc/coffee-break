@@ -17,8 +17,9 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Services />
+
+    <Info styleClass="contact" />
     <Menu items={data.menu} />
-    <Info />
   </Layout>
 )
 

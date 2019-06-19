@@ -42,6 +42,14 @@ h6 {
   background: var(--mainYellow) !important;
   color: var(--mainDark) !important;
 }
+.btn-contact {
+  color: grey !important;
+  border-color: grey !important;
+}
+.btn-contact:hover {
+  background: #005030 !important;
+  color: white !important;
+}
 .default-background {
   min-height: 50vh;
   display: flex;
@@ -98,8 +106,8 @@ h6 {
 .contact {
   background: var(--mainGrey);
 }
-.contact {
-  background: var(--mainGrey);
+.contact-form {
+  background: white;
 }
 .footer {
   background: var(--mainDark);
@@ -125,7 +133,7 @@ h6 {
   display: inline-block;
   /* color: var(--primaryColor); */
   color: #005030;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin-bottom: 1.5rem;
 }
 .services h6 {

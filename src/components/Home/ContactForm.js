@@ -3,7 +3,7 @@ import Title from "../Globals/Title"
 
 export default function ContactForm() {
   return (
-    <section className="contact pt-3 pb-5 px-auto">
+    <section className="contact-form pt-0 pb-5 px-auto">
       <div className="row">
         <div className="col-10 col-sm-8 col-md-6 mx-auto">
           <form

@@ -36,7 +36,7 @@ export default class Menu extends Component {
   render() {
     if (this.state.items.length > 0) {
       return (
-        <section className="menu py-5 mx-auto">
+        <section className="contact-form py-5 mx-auto">
           <div className="container">
             <Title title="best deals in dining" />
             {/* {categories} */}
