@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
     />
     <Services />
     <Gallery />
-    <Info styleClass="contact" />
+    {/* <Info styleClass="contact" /> */}
   </Layout>
 )
 
