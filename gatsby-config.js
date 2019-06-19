@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `TOUR O MIAMI`,
+    title: `TOUR-O-MIAMI`,
     description: `Tour-O-Miami is your guide to surviving Miami's high cost of living. We strive to find affordable, hidden gems in the areas of food, drink and transportation`,
     author: `info@touromiami.com`,
   },
