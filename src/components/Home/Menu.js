@@ -71,14 +71,13 @@ export default class Menu extends Component {
                   </div>
                   {/* item text */}
                   <div className="flex-grow-1 px-3">
-                    <div className="d-flex  justify-content-between mx-auto">
+                    <div className="menu-css">
                       <h7 className="mb-0">{node.title}</h7>
-
                       <h7 className="mb-0 text-yellow">${node.price}</h7>
                     </div>
-                    <p className="text-muted">
+                    {/* <p className=" text-muted">
                       <small>{node.description.description}</small>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               )
