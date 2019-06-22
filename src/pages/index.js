@@ -10,7 +10,7 @@ import Gallery from "../components/Home/Gallery"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="HOME" />
+    <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="welcome to miami"
