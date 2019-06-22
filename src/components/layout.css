@@ -188,3 +188,12 @@ h6 {
   grid-gap: 20px;
   grid-template-columns: 200x 10px;
 }
+
+.btn-width,
+.btn-width:focus,
+.btn-width:active {
+  width: 65px !important;
+  font-size: 0.95rem;
+  outline: none !important;
+  box-shadow: none;
+}

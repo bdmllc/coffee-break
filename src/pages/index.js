@@ -42,7 +42,7 @@ export const query = graphql`
           price
           category
           image {
-            fixed(width: 15, height: 15) {
+            fixed(width: 25) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }

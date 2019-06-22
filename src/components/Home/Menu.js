@@ -38,7 +38,7 @@ export default class Menu extends Component {
       return (
         <section className="contact-form py-5 mx-auto">
           <div className="container">
-            <Title title="best deals in dining" />
+            <Title title="best meal deals" />
             {/* {categories} */}
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">
@@ -47,7 +47,7 @@ export default class Menu extends Component {
                     <button
                       type="button"
                       key={index}
-                      className="btn btn-contact text-capitalize m-3"
+                      className="btn btn-width btn-contact text-capitalize m-3"
                       onClick={() => {
                         this.handleItems(category)
                       }}
@@ -89,7 +89,7 @@ export default class Menu extends Component {
       return (
         <section className="menu py-5">
           <div className="container">
-            <Title title="best deals in dining" />
+            <Title title="Best Meal Deals" />
             <div className="row">
               <div className="col-10 col-sm-6 mx-auto text-center text-capitalize">
                 <h1>there are no items to display</h1>

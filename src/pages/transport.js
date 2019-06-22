@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
-              TOUR-O-MIAMI is your best source for tips on how to use Miami's
+              Tour-O-Miami is your best source for tips on how to use Miami's
               public transportation service to get to where you want, when you
               want.
             </p>
