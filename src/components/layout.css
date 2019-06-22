@@ -178,3 +178,7 @@ h6 {
 .menu-title {
   color: grey;
 }
+
+.flex-item {
+  flex-shrink: 2;
+}

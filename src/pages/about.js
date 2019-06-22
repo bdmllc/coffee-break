@@ -23,9 +23,7 @@ const IndexPage = ({ data }) => (
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
               We're a vibrant group of millenials driven to mold a new and more
-              sustanable world for us and generations to come.
-              <br />
-              <br />
+              sustanable world for ourselves and future the generations to come.
               We hope our new website provides tourists and locals alike the
               tools to better experience Miami for less.
             </p>

@@ -64,16 +64,17 @@ export default class Menu extends Component {
               return (
                 <div
                   key={node.id}
-                  className="col-11 col-md-6 my-3 d-flex mx-auto"
+                  className="col-11 col-md-6 my-3 d-flex  mx-auto"
                 >
                   <div>
                     <Img fixed={node.image.fixed} />
                   </div>
                   {/* item text */}
                   <div className="flex-grow-1 px-3">
-                    <div className="d-flex justify-content-between">
-                      <h6 className="mb-0">{node.title}</h6>
-                      <h6 className="mb-0 text-yellow">${node.price}</h6>
+                    <div className="d-flex  justify-content-between mx-auto">
+                      <h7 className="mb-0">{node.title}</h7>
+
+                      <h7 className="mb-0 text-yellow">${node.price}</h7>
                     </div>
                     <p className="text-muted">
                       <small>{node.description.description}</small>
