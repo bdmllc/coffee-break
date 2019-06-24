@@ -70,10 +70,11 @@ export default class Menu extends Component {
                     <Img fixed={node.image.fixed} />
                   </div>
                   {/* item text */}
-                  <div className="flex-grow-1 px-3">
+                  <div className="menu-css px-3">
                     <div className="menu-css">
-                      <h7 className="mb-0">{node.title}</h7>
-                      <h7 className="mb-0 text-yellow">${node.price}</h7>
+                      <h6 className="mb-0">{node.title}</h6>
+                      <br />
+                      <h6 className="mb-0 text-yellow">${node.price}</h6>
                     </div>
                     {/* <p className=" text-muted">
                       <small>{node.description.description}</small>

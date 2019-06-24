@@ -1,5 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
+<!-- 06/22/19 9:49pm break at 3:16:27 of video | DrinksMenu.js -->
 <!-- 3:45:04 Finished adding item via Contentful.com  -->
 <!-- 2:15:17 Contentful Menu Section Begins  -->
 <!-- 1:55:52 Break @  -->

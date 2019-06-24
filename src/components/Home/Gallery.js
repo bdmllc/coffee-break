@@ -40,7 +40,7 @@ export default function Gallery() {
         const img3 = data.img3.childImageSharp.fluid
         return (
           <Section>
-            <GalleryWrapper>
+            <GalleryWrapper className="mt-5">
               <div className="item item-1">
                 <Img fluid={img1} />
                 <p className="info">awesome pizza!</p>

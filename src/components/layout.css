@@ -105,7 +105,7 @@ h6 {
 }
 .menu,
 .contact {
-  background: var(--mainGrey);
+  background: #eeeded;
 }
 .contact-form {
   background: white;
@@ -185,8 +185,8 @@ h6 {
 
 .menu-css {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 200x 10px;
+  grid-gap: 10px;
+  grid-template-columns: 7fr 1fr;
 }
 
 .btn-width,
