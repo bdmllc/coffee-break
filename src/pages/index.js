@@ -28,7 +28,6 @@ const IndexPage = ({ data }) => (
     </BackgroundSection>
     <DrinksMenu drinks={data.drinks} />
     <Testimonial />
-    <Gallery />
 
     {/* <Info styleClass="contact" /> */}
   </Layout>
