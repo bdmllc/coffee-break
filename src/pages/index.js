@@ -8,6 +8,7 @@ import Info from "../components/Home/Info"
 import Services from "../components/Home/Services"
 import Gallery from "../components/Home/Gallery"
 import DrinksMenu from "../components/Home/DrinksMenu"
+import Testimonial from "../components/Home/Testimonial"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,7 +19,15 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Services />
+    <BackgroundSection
+      img={data.img2.childImageSharp.fluid}
+      title="Testimonial"
+      styleClass="testimonial-background"
+    >
+      <Testimonial />
+    </BackgroundSection>
     <DrinksMenu drinks={data.drinks} />
+    <Testimonial />
     <Gallery />
 
     {/* <Info styleClass="contact" /> */}
@@ -28,6 +37,13 @@ const IndexPage = ({ data }) => (
 export const query = graphql`
   {
     img: file(relativePath: { eq: "default-background.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "beach-sunset-cropped.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
