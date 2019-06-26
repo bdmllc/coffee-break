@@ -14,7 +14,7 @@ export default class DrinksMenu extends Component {
   render() {
     if (this.state.drinks.length > 0) {
       return (
-        <section className="menu py-5">
+        <section className="menu pt-5">
           <div className="container">
             <Title title="best of our drinks" />
             {/* categories */}
@@ -24,7 +24,7 @@ export default class DrinksMenu extends Component {
                 return (
                   <div
                     key={node.id}
-                    className="col-11 col-md-6 my-3 d-flex mx-auto"
+                    className="col-11 col-md-6 mt-3 d-flex mx-auto"
                   >
                     <div>
                       <Img fixed={node.image.fixed} />
@@ -48,7 +48,7 @@ export default class DrinksMenu extends Component {
       )
     } else {
       return (
-        <section className="menu py-5">
+        <section className="menu pt-5">
           <div className="container">
             <Title title="Drinks" />
             <div className="row">

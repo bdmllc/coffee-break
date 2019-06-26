@@ -86,9 +86,9 @@ h6 {
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    rgba(102, 102, 102, 0.35),
-    rgba(102, 102, 102, 0.35),
-    rgba(102, 102, 102, 0.35)
+    rgba(102, 102, 102, 0.4),
+    rgba(102, 102, 102, 0.4),
+    rgba(102, 102, 102, 0.4)
   );
   opacity: 1 !important;
   background-position: center;
@@ -120,13 +120,14 @@ h6 {
 }
 .menu,
 .contact {
-  background: #eeeded;
+  background: white;
 }
 .contact-form {
   background: white;
 }
 .footer {
-  background: var(--mainDark);
+  background: rgb(231, 231, 231);
+  color: #005030;
 }
 
 /* services */
