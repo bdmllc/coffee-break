@@ -4,8 +4,7 @@ import Title from "../components/Globals/Title"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
-import Info from "../components/Home/Info"
-import Services from "../components/Home/Services"
+
 import DrinksMenu from "../components/Home/DrinksMenu"
 
 const DrinksPage = ({ data }) => (
@@ -48,7 +47,6 @@ export const query = graphql`
         }
       }
     }
-
     drinks: allContentfulDrinksItem {
       edges {
         node {
