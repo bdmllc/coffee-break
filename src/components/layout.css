@@ -81,7 +81,7 @@ h6 {
   /* background-attachment: fixed; */
 }
 .testimonial-background {
-  min-height: 25vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@ h6 {
 
 /* services */
 .services {
-  padding: 4rem 0;
+  padding: 5rem 0rem;
 }
 .services {
   background: var(--darkGrey);
