@@ -6,7 +6,9 @@ import Img from "gatsby-image"
 
 const SINGLE_IMAGE = graphql`
   {
-    img1: file(relativePath: { eq: "homeGallery/img-1.jpeg" }) {
+    img1: file(
+      relativePath: { eq: "homeGallery/lomo_saltado_closeup_cropped_6.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -43,7 +45,7 @@ export default function Gallery() {
             <GalleryWrapper className="mt-5">
               <div className="item item-1">
                 <Img fluid={img1} />
-                <p className="info">awesome pizza!</p>
+                <p className="info">Peruvian Lomo Saltado!</p>
               </div>
               <div className="item item-2">
                 <Img fluid={img2} />
