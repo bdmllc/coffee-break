@@ -48,7 +48,7 @@ export default class DrinksMenu extends Component {
                     <button
                       type="button"
                       key={index}
-                      className="btn btn-yellow text-capitalize m3"
+                      className="btn btn-width btn-contact text-capitalize m-2"
                       onClick={() => {
                         this.handleDrinks(category)
                       }}
