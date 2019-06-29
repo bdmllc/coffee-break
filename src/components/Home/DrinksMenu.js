@@ -2,15 +2,38 @@ import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-image"
 
+const getCategories = drinks => {
+  let tempDrinks = drinks.map(drinks => {
+    return drinks.node.category
+  })
+  let tempCategories = new Set(tempDrinks)
+  let categories = Array.from(tempCategories)
+  categories = ["all", ...categories]
+  return categories
+}
+
 export default class DrinksMenu extends Component {
   constructor(props) {
     super(props)
     this.state = {
       drinks: props.drinks.edges,
       drinksItems: props.drinks.edges,
+      categories: getCategories(props.drinks.edges),
     }
   }
-
+  handleDrinks = category => {
+    let tempDrinks = [...this.state.drinks]
+    if (category === "all") {
+      this.setState(() => {
+        return { drinksItems: tempDrinks }
+      })
+    } else {
+      let drinks = tempDrinks.filter(({ node }) => node.category === category)
+      this.setState(() => {
+        return { drinksItems: drinks }
+      })
+    }
+  }
   render() {
     if (this.state.drinks.length > 0) {
       return (
@@ -18,6 +41,24 @@ export default class DrinksMenu extends Component {
           <div className="container">
             <Title title="best of our drinks" />
             {/* categories */}
+            <div className="row mb-5">
+              <div className="col-10 mx-auto text-center">
+                {this.state.categories.map((category, index) => {
+                  return (
+                    <button
+                      type="button"
+                      key={index}
+                      className="btn btn-yellow text-capitalize m3"
+                      onClick={() => {
+                        this.handleDrinks(category)
+                      }}
+                    >
+                      {category}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
             {/* items */}
             <div className="row ">
               {this.state.drinksItems.map(({ node }) => {
