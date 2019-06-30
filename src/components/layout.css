@@ -86,9 +86,9 @@ h6 {
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    rgba(102, 102, 102, 0.4),
-    rgba(102, 102, 102, 0.4),
-    rgba(102, 102, 102, 0.4)
+    rgba(102, 102, 102, 0.5),
+    rgba(102, 102, 102, 0.5),
+    rgba(102, 102, 102, 0.5)
   );
   opacity: 1 !important;
   background-position: center;
