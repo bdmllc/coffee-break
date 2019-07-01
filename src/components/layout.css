@@ -81,14 +81,14 @@ h6 {
   /* background-attachment: fixed; */
 }
 .testimonial-background {
-  min-height: 50vh;
+  min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    rgba(102, 102, 102, 0.5),
-    rgba(102, 102, 102, 0.5),
-    rgba(102, 102, 102, 0.5)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
   );
   opacity: 1 !important;
   background-position: center;
@@ -132,7 +132,8 @@ h6 {
 
 /* services */
 .services {
-  padding: 5rem 0rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
 }
 .services {
   background: var(--darkGrey);
@@ -216,6 +217,7 @@ h6 {
 
 .testimonial-font {
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
   font-size: 1.25rem;
   color: white;
 }

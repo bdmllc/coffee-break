@@ -13,7 +13,7 @@ export default function Testimonial() {
               "Thanks to T.O.M., we saved hundreds of euros on our last trip to
               Miami!"
               <br />
-              <br />- Reinhold Lehmbruck
+              <br />- Giselle Badeaux
             </p>
           </div>
         </div>

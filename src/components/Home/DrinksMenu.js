@@ -37,7 +37,7 @@ export default class DrinksMenu extends Component {
   render() {
     if (this.state.drinks.length > 0) {
       return (
-        <section className="menu pt-5">
+        <section className="contact-form py-5 mx-auto">
           <div className="container">
             <Title title="best of our drinks" />
             {/* categories */}
@@ -65,20 +65,21 @@ export default class DrinksMenu extends Component {
                 return (
                   <div
                     key={node.id}
-                    className="col-11 col-md-6 mt-3 d-flex mx-auto"
+                    className="col-11 col-md-6 my-3 d-flex  mx-auto"
                   >
                     <div>
                       <Img fixed={node.image.fixed} />
                     </div>
                     {/* item text */}
-                    <div className="flex-grow-1 px-3">
-                      <div className="d-flex justify-content-between">
+                    <div className="menu-css px-3">
+                      <div className="menu-css">
                         <h6 className="mb-0">{node.title}</h6>
-                        <h6 className="mb-0 py-0 ">${node.price}</h6>
+                        <br />
+                        <h6 className="mb-0 text-yellow">${node.price}</h6>
                       </div>
-                      <p className="text-muted">
+                      {/* <p className="text-muted">
                         <small>{node.description.description}</small>
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 )

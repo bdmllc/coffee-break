@@ -16,7 +16,6 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Services />
-    <Gallery />
     <BackgroundSection
       img={data.img2.childImageSharp.fluid}
       title="Testimonial"
@@ -24,6 +23,7 @@ const IndexPage = ({ data }) => (
     >
       <Testimonial />
     </BackgroundSection>
+    <Gallery />
 
     {/* <Info styleClass="contact" /> */}
   </Layout>
@@ -31,14 +31,14 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "default-background.jpeg" }) {
+    img: file(relativePath: { eq: "tom-default-background.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    img2: file(relativePath: { eq: "beach-sunset-cropped.jpeg" }) {
+    img2: file(relativePath: { eq: "Giselle-Badeux.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
