@@ -68,22 +68,18 @@ export default class DrinksMenu extends Component {
                   key={node.id}
                   className="col-10 mx-auto my-3 col-md-6 col-lg-4 "
                 >
-                  <div className="card card-img-top card-body">
-                    <div>
-                      <Img fixed={node.image.fixed} />
-                    </div>
-                    <div className="">
-                      <div className="d-flex justify-content-between">
-                        {/* first flex-child */}
-                        {/* <div className="text-uppercase">
-                          <h6>Class</h6>
-                        </div> */}
-                      </div>
-                    </div>
+                  <div className="card ">
+                    <Img fixed={node.image.fixed} className="card-img-top" />
 
-                    {/* item text */}
-                    <div className=" menu-css pl-0">
-                      <div className="menu-css">
+                    <div className="card-body">
+                      {/* <div className="d-flex justify-content-between">
+                        <div className="text-uppercase">
+                          <h6>Class</h6>
+                        </div>
+                      </div> */}
+
+                      {/* item text */}
+                      <div className=" justify-content-between">
                         <h6 className="mb-0">{node.title}</h6>
                         <br />
                         <h6 className="mb-0 text-yellow">${node.price}</h6>
