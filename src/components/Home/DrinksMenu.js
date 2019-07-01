@@ -37,8 +37,8 @@ export default class DrinksMenu extends Component {
   render() {
     if (this.state.drinks.length > 0) {
       return (
-        <section className="contact-form py-5 mx-auto">
-          <div className="container">
+        <div className="container">
+          <section className="contact-form py-5 mx-auto">
             <Title title="best of our drinks" />
             {/* categories */}
             <div className="row mb-5">
@@ -59,34 +59,45 @@ export default class DrinksMenu extends Component {
                 })}
               </div>
             </div>
-            {/* items */}
-            <div className="row ">
-              {this.state.drinksItems.map(({ node }) => {
-                return (
-                  <div
-                    key={node.id}
-                    className="col-11 col-md-6 my-3 d-flex  mx-auto"
-                  >
+          </section>
+          {/* items */}
+          <div className="row ">
+            {this.state.drinksItems.map(({ node }) => {
+              return (
+                <div
+                  key={node.id}
+                  className="col-10 mx-auto my-3 col-md-6 col-lg-4 "
+                >
+                  <div className="card card-img-top card-body">
                     <div>
                       <Img fixed={node.image.fixed} />
                     </div>
+                    <div className="">
+                      <div className="d-flex justify-content-between">
+                        {/* first flex-child */}
+                        {/* <div className="text-uppercase">
+                          <h6>Class</h6>
+                        </div> */}
+                      </div>
+                    </div>
+
                     {/* item text */}
-                    <div className="menu-css px-3">
+                    <div className=" menu-css pl-0">
                       <div className="menu-css">
                         <h6 className="mb-0">{node.title}</h6>
                         <br />
                         <h6 className="mb-0 text-yellow">${node.price}</h6>
                       </div>
-                      {/* <p className="text-muted">
+                    </div>
+                    {/* <p className="text-muted">
                         <small>{node.description.description}</small>
                       </p> */}
-                    </div>
                   </div>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
-        </section>
+        </div>
       )
     } else {
       return (
