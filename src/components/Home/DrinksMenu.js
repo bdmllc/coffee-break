@@ -68,7 +68,7 @@ export default class DrinksMenu extends Component {
                   key={node.id}
                   className="col-10 mx-auto my-3 col-md-6 col-lg-4 "
                 >
-                  <div className="card ">
+                  <div className="card card-body ">
                     <Img fixed={node.image.fixed} className="card-img-top" />
 
                     <div className="card-body">
