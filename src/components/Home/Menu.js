@@ -74,7 +74,9 @@ export default class Menu extends Component {
                     <div className="menu-css">
                       <h6 className="mb-0">{node.title}</h6>
                       <br />
-                      <h6 className="mb-0 text-yellow">${node.price}</h6>
+                      <h6 className="mb-0 text-green">
+                        <strong>${node.price}</strong>
+                      </h6>
                     </div>
                     {/* <p className=" text-muted">
                       <small>{node.description.description}</small>

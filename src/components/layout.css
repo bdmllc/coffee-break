@@ -4,6 +4,7 @@
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #000;
+  --mainGreen: #005030;
 }
 body {
   background: var(--mainWhite);
@@ -22,6 +23,9 @@ h6 {
 }
 .text-yellow {
   color: var(--mainYellow) !important;
+}
+.text-green {
+  color: var(--mainGreen) !important;
 }
 .title {
   letter-spacing: 0.3rem;
@@ -81,7 +85,7 @@ h6 {
   /* background-attachment: fixed; */
 }
 .testimonial-background {
-  min-height: 35vh;
+  min-height: 52vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +97,7 @@ h6 {
   opacity: 1 !important;
   background-position: center;
   background-size: cover;
+  margin-bottom: 4.5rem;
   /* background-attachment: fixed; */
 }
 .shop {

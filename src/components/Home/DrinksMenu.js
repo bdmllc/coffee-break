@@ -66,9 +66,9 @@ export default class DrinksMenu extends Component {
               return (
                 <div
                   key={node.id}
-                  className="col-10 mx-auto my-3 col-md-6 col-lg-4 "
+                  className="col-10 mx-auto px-auto my-3 col-md-6 col-lg-4 "
                 >
-                  <div className="card card-body ">
+                  <div className="card card-body px-auto">
                     <Img fixed={node.image.fixed} className="card-img-top" />
 
                     <div className="card-body">
@@ -82,7 +82,9 @@ export default class DrinksMenu extends Component {
                       <div className=" justify-content-between">
                         <h6 className="mb-0">{node.title}</h6>
                         <br />
-                        <h6 className="mb-0 text-yellow">${node.price}</h6>
+                        <h6 className="mb-0 text-green">
+                          <strong>${node.price}</strong>
+                        </h6>
                       </div>
                     </div>
                     {/* <p className="text-muted">

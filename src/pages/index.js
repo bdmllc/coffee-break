@@ -16,6 +16,8 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Services />
+    <Gallery />
+
     <BackgroundSection
       img={data.img2.childImageSharp.fluid}
       title="Testimonial"
@@ -23,7 +25,6 @@ const IndexPage = ({ data }) => (
     >
       <Testimonial />
     </BackgroundSection>
-    <Gallery />
 
     {/* <Info styleClass="contact" /> */}
   </Layout>
