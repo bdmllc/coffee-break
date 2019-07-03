@@ -66,7 +66,41 @@ export default class DrinksMenu extends Component {
               return (
                 <div
                   key={node.id}
-                  className="col-10 mx-auto px-auto my-3 col-md-6 col-lg-4 "
+                  className="col-10 mx-auto px-auto my-3 col-md-6 col-lg-4"
+                >
+                  <div className="card card-body px-auto">
+                    <Img fixed={node.image.fixed} className="card-img-top" />
+
+                    <div className="card-body">
+                      {/* <div className="d-flex justify-content-between">
+                        <div className="text-uppercase">
+                          <h6>Class</h6>
+                        </div>
+                      </div> */}
+
+                      {/* item text */}
+                      <div className=" justify-content-between">
+                        <h6 className="mb-0">{node.title}</h6>
+                        <br />
+                        <h6 className="mb-0 text-green">
+                          <strong>${node.price}</strong>
+                        </h6>
+                      </div>
+                    </div>
+                    {/* <p className="text-muted">
+                        <small>{node.description.description}</small>
+                      </p> */}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          <div className="row ">
+            {this.state.drinksItems.map(({ node }) => {
+              return (
+                <div
+                  key={node.id}
+                  className="col-10 mx-auto px-auto my-3 col-md-6 col-lg-4"
                 >
                   <div className="card card-body px-auto">
                     <Img fixed={node.image.fixed} className="card-img-top" />
