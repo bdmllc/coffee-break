@@ -6,6 +6,8 @@ import BackgroundSection from "../components/Globals/BackgroundSection"
 import Services from "../components/Home/Services"
 import Gallery from "../components/Home/Gallery"
 import Testimonial from "../components/Home/Testimonial"
+import Title from "../components/Globals/Title"
+import InfoMission from "../components/Home/InfoMission"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,10 +20,10 @@ const IndexPage = ({ data }) => (
     <Services />
     <BackgroundSection
       img={data.img2.childImageSharp.fluid}
-      title="Testimonial"
+      title="Our Mission"
       styleClass="testimonial-background"
     >
-      <Testimonial />
+      <InfoMission />
     </BackgroundSection>
     <Gallery />
 

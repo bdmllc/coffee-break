@@ -90,15 +90,16 @@ h6 {
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.35)
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51)
   );
   opacity: 1 !important;
   background-position: center;
   background-size: cover;
   margin-bottom: 4.5rem;
   /* background-attachment: fixed; */
+  color: white;
 }
 .shop {
   min-height: 50vh;
