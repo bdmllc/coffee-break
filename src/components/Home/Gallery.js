@@ -6,21 +6,21 @@ import Img from "gatsby-image"
 
 const SINGLE_IMAGE = graphql`
   {
-    img1: file(relativePath: { eq: "homeGallery/img-1.jpeg" }) {
+    img1: file(relativePath: { eq: "homeGallery/tom-photo-grid-1.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "homeGallery/tom-photo-grid-2.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    img2: file(relativePath: { eq: "homeGallery/img-2.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-    img3: file(relativePath: { eq: "homeGallery/img-3.jpeg" }) {
+    img3: file(relativePath: { eq: "homeGallery/tom-photo-grid-3.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -43,15 +43,15 @@ export default function Gallery() {
             <GalleryWrapper className="mt-0 mb-5 pt-1 pb-3">
               <div className="item item-1">
                 <Img fluid={img1} />
-                <p className="info">awesome pizza!</p>
+                <p className="info">where to eat</p>
               </div>
               <div className="item item-2">
                 <Img fluid={img2} />
-                <p className="info">tender ribs!</p>
+                <p className="info">where to drink</p>
               </div>
               <div className="item item-3">
                 <Img fluid={img3} />
-                <p className="info">juicy steaks!</p>
+                <p className="info">how to get around</p>
               </div>
             </GalleryWrapper>
           </Section>
@@ -73,7 +73,8 @@ const GalleryWrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background: ${styles.colors.mainYellow};
+    background: #90745c;
+    color: white;
     padding: 0.1rem 0.3rem;
     text-transform: capitalize;
   }
