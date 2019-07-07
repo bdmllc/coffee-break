@@ -58,8 +58,8 @@ export const query = graphql`
           price
           category
           image {
-            fixed(width: 325) {
-              ...GatsbyContentfulFixed_tracedSVG
+            fluid(maxHeight: 426) {
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }

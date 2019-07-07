@@ -69,7 +69,9 @@ export default class DrinksMenu extends Component {
                   className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
                 >
                   <div className="card" style={{ minWidth: "100%" }}>
-                    <Img fixed={node.image.fixed} className="card-img-top" />
+                    {typeof node.image.fluid !== "undefined" && (
+                      <Img fluid={node.image.fluid} className="card-img-top" />
+                    )}
 
                     <div className="card-body text-center">
                       {/* item text */}
@@ -96,7 +98,7 @@ export default class DrinksMenu extends Component {
                   className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
                 >
                   <div className="card" style={{ minHeight: "100%" }}>
-                    <Img fixed={node.image.fixed} className="card-img-top" />
+                    <Img fluid={node.image.fluid} className="card-img-top" />
 
                     <div className="card-body text-center">
                       {/* <div className="d-flex justify-content-between">
