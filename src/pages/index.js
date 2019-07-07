@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => (
     <BackgroundSection
       img={data.img2.childImageSharp.fluid}
       title="Our Mission"
-      styleClass="testimonial-background"
+      styleClass="testimonial-background-2"
     >
       <InfoMission />
     </BackgroundSection>
