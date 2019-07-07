@@ -39,7 +39,7 @@ export default class DrinksMenu extends Component {
       return (
         <div className="container">
           <section className="contact-form py-5 mx-auto">
-            <Title title="best of our drinks" />
+            <Title title="favorite libations" />
             {/* categories */}
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">
@@ -81,40 +81,6 @@ export default class DrinksMenu extends Component {
                       <h6 className="mb-0 text-green">
                         <strong>${node.price}</strong>
                       </h6>
-                    </div>
-                    {/* <p className="text-muted">
-                        <small>{node.description.description}</small>
-                      </p> */}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-          <div className="row ">
-            {this.state.drinksItems.map(({ node }) => {
-              return (
-                <div
-                  key={node.id}
-                  className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
-                >
-                  <div className="card" style={{ minHeight: "100%" }}>
-                    <Img fluid={node.image.fluid} className="card-img-top" />
-
-                    <div className="card-body text-center">
-                      {/* <div className="d-flex justify-content-between">
-                        <div className="text-uppercase">
-                          <h6>Class</h6>
-                        </div>
-                      </div> */}
-
-                      {/* item text */}
-                      <div className=" justify-content-between">
-                        <h6 className="mb-0">{node.title}</h6>
-                        <br />
-                        <h6 className="mb-0 text-green">
-                          <strong>${node.price}</strong>
-                        </h6>
-                      </div>
                     </div>
                     {/* <p className="text-muted">
                         <small>{node.description.description}</small>

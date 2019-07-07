@@ -7,7 +7,7 @@ export default function Testimonial() {
     <section className="pt-1 ">
       <div className="container">
         <Title
-          title="Our Website Is Coming Soon!"
+          // title="Our Website Is Coming Soon!"
           style={{ minHeight: "100%" }}
         />
         <div className="row">
@@ -16,7 +16,7 @@ export default function Testimonial() {
               "Thanks to T.O.M., we saved hundreds of euros on our last trip to
               Miami!"
               <br />
-              <br />- Giselle Badeaux
+              <br />- Giselle B.
             </p>
           </div>
         </div>

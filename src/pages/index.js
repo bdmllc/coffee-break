@@ -26,6 +26,13 @@ const IndexPage = ({ data }) => (
       <InfoMission />
     </BackgroundSection>
     <Gallery />
+    <BackgroundSection
+      img={data.img3.childImageSharp.fluid}
+      title="Tour-O-Miami Testimonial"
+      styleClass="testimonial-background"
+    >
+      <Testimonial />
+    </BackgroundSection>
 
     {/* <Info styleClass="contact" /> */}
   </Layout>
@@ -41,6 +48,13 @@ export const query = graphql`
       }
     }
     img2: file(relativePath: { eq: "beach-shore.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    img3: file(relativePath: { eq: "Giselle-Badeux.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
