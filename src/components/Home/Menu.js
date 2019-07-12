@@ -64,23 +64,24 @@ export default class Menu extends Component {
               return (
                 <div
                   key={node.id}
-                  className="col-11 col-md-6 my-3 d-flex  mx-auto"
+                  className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
                 >
-                  <div>
-                    <Img fixed={node.image.fixed} />
-                  </div>
-                  {/* item text */}
-                  <div className="menu-css px-3">
-                    <div className="menu-css">
+                  <div className="card" style={{ minWidth: "100%" }}>
+                    {typeof node.image.fluid !== "undefined" && (
+                      <Img fluid={node.image.fluid} className="card-img-top" />
+                    )}
+                    {/* item text */}
+                    <div className="card-body text-center">
                       <h6 className="mb-0">{node.title}</h6>
                       <br />
                       <h6 className="mb-0 text-green">
                         <strong>${node.price}</strong>
                       </h6>
-                    </div>
-                    {/* <p className=" text-muted">
+
+                      {/* <p className=" text-muted">
                       <small>{node.description.description}</small>
                     </p> */}
+                    </div>
                   </div>
                 </div>
               )

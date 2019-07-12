@@ -1,14 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
-
 import Menu from "../components/Home/Menu"
 
-const IndexPage = ({ data }) => (
+const FoodPage = ({ data }) => (
   <Layout>
     <SEO title="Restaurants | Affordable Eats In Miami: 2019" />
     <BackgroundSection
@@ -41,8 +39,8 @@ export const query = graphql`
           price
           category
           image {
-            fixed(width: 175) {
-              ...GatsbyContentfulFixed_tracedSVG
+            fluid(maxWidth: 426) {
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -51,4 +49,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default FoodPage
