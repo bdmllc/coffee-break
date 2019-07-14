@@ -8,6 +8,7 @@ import Gallery from "../components/Home/Gallery"
 import Testimonial from "../components/Home/Testimonial"
 import Title from "../components/Globals/Title"
 import InfoMission from "../components/Home/InfoMission"
+import Counter from "../components/counter"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -33,6 +34,7 @@ const IndexPage = ({ data }) => (
     >
       <Testimonial />
     </BackgroundSection>
+    <Counter />
 
     {/* <Info styleClass="contact" /> */}
   </Layout>

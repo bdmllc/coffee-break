@@ -36,8 +36,8 @@ export default class Menu extends Component {
   render() {
     if (this.state.items.length > 0) {
       return (
-        <section className="contact-form py-5 mx-auto">
-          <div className="container">
+        <div className="container">
+          <section className="contact-form py-5 mx-auto">
             <Title title="best meal deals" />
             {/* {categories} */}
             <div className="row mb-5">
@@ -58,36 +58,36 @@ export default class Menu extends Component {
                 })}
               </div>
             </div>
-            {/* {items} */}
-            <div className="row" />
-            {this.state.cuisineItems.map(({ node }) => {
-              return (
-                <div
-                  key={node.id}
-                  className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
-                >
-                  <div className="card" style={{ minWidth: "100%" }}>
-                    {typeof node.image.fluid !== "undefined" && (
-                      <Img fluid={node.image.fluid} className="card-img-top" />
-                    )}
-                    {/* item text */}
-                    <div className="card-body text-center">
-                      <h6 className="mb-0">{node.title}</h6>
-                      <br />
-                      <h6 className="mb-0 text-green">
-                        <strong>${node.price}</strong>
-                      </h6>
+          </section>
+          {/* {items} */}
+          <div className="row" />
+          {this.state.cuisineItems.map(({ node }) => {
+            return (
+              <div
+                key={node.id}
+                className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
+              >
+                <div className="card" style={{ minWidth: "100%" }}>
+                  {typeof node.image.fluid !== "undefined" && (
+                    <Img fluid={node.image.fluid} className="card-img-top" />
+                  )}
+                  {/* item text */}
+                  <div className="card-body text-center">
+                    <h6 className="mb-0">{node.title}</h6>
+                    <br />
+                    <h6 className="mb-0 text-green">
+                      <strong>${node.price}</strong>
+                    </h6>
 
-                      {/* <p className=" text-muted">
+                    {/* <p className=" text-muted">
                       <small>{node.description.description}</small>
                     </p> */}
-                    </div>
                   </div>
                 </div>
-              )
-            })}
-          </div>
-        </section>
+              </div>
+            )
+          })}
+        </div>
       )
     } else {
       return (
