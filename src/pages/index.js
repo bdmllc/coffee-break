@@ -7,6 +7,7 @@ import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 import Services from "../components/Home/Services"
 import Gallery from "../components/Home/Gallery"
+import DrinksMenu from "../components/Home/DrinksMenu"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = ({ data }) => (
     />
     <Services />
     <Gallery />
+    <DrinksMenu drinks={data.drinks} />
     {/* <Info styleClass="contact" /> */}
   </Layout>
 )
@@ -42,7 +44,25 @@ export const query = graphql`
           price
           category
           image {
-            fixed(width: 25) {
+            fixed(width: 150) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
+    drinks: allContentfulDrinksItem {
+      edges {
+        node {
+          id
+          title
+          description {
+            description
+          }
+          price
+          category
+          image {
+            fixed(width: 150) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
