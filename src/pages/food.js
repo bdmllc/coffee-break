@@ -1,14 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
-import Services from "../components/Home/Services"
 import Menu from "../components/Home/Menu"
 
-const IndexPage = ({ data }) => (
+const FoodPage = ({ data }) => (
   <Layout>
     <SEO title="Restaurants | Affordable Eats In Miami: 2019" />
     <BackgroundSection
@@ -41,8 +39,13 @@ export const query = graphql`
           price
           category
           image {
+<<<<<<< HEAD
             fixed(width: 175) {
               ...GatsbyContentfulFixed_tracedSVG
+=======
+            fluid(maxHeight: 426) {
+              ...GatsbyContentfulFluid_tracedSVG
+>>>>>>> b26895350f579528f8bae169cd93f95c47d8c640
             }
           }
         }
@@ -51,4 +54,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default FoodPage

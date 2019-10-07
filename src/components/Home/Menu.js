@@ -36,8 +36,8 @@ export default class Menu extends Component {
   render() {
     if (this.state.items.length > 0) {
       return (
-        <section className="contact-form py-5 mx-auto">
-          <div className="container">
+        <div className="container">
+          <section className="contact-form py-5 mx-auto">
             <Title title="best meal deals" />
             {/* {categories} */}
             <div className="row mb-5">
@@ -47,7 +47,7 @@ export default class Menu extends Component {
                     <button
                       type="button"
                       key={index}
-                      className="btn btn-width btn-contact text-capitalize m-3"
+                      className="btn btn-width btn-contact text-capitalize m-2"
                       onClick={() => {
                         this.handleItems(category)
                       }}
@@ -58,33 +58,45 @@ export default class Menu extends Component {
                 })}
               </div>
             </div>
-            {/* {items} */}
-            <div className="row" />
-            {this.state.cuisineItems.map(({ node }) => {
-              return (
-                <div
-                  key={node.id}
-                  className="col-11 col-md-6 my-3 d-flex  mx-auto"
-                >
-                  <div>
-                    <Img fixed={node.image.fixed} />
-                  </div>
+          </section>
+          {/* {items} */}
+          <div className="row" />
+          {this.state.cuisineItems.map(({ node }) => {
+            return (
+              <div
+                key={node.id}
+                className="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto my-3"
+              >
+                <div className="card" style={{ minWidth: "100%" }}>
+                  {typeof node.image.fluid !== "undefined" && (
+                    <Img fluid={node.image.fluid} className="card-img-top" />
+                  )}
                   {/* item text */}
+<<<<<<< HEAD
                   <div className="menu-css px-3">
                     <div className="menu-css">
                       <h6 className="mb-0">{node.title}</h6>
                       <br />
                       <h6 className="mb-0 text-yellow">${node.price}</h6>
                     </div>
+=======
+                  <div className="card-body text-center">
+                    <h6 className="mb-0">{node.title}</h6>
+                    <br />
+                    <h6 className="mb-0 text-green">
+                      <strong>${node.price}</strong>
+                    </h6>
+
+>>>>>>> b26895350f579528f8bae169cd93f95c47d8c640
                     {/* <p className=" text-muted">
                       <small>{node.description.description}</small>
                     </p> */}
                   </div>
                 </div>
-              )
-            })}
-          </div>
-        </section>
+              </div>
+            )
+          })}
+        </div>
       )
     } else {
       return (

@@ -4,10 +4,10 @@ import Title from "../components/Globals/Title"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
-import Info from "../components/Home/Info"
-import Services from "../components/Home/Services"
 
-const IndexPage = ({ data }) => (
+import DrinksMenu from "../components/Home/DrinksMenu"
+
+const DrinksPage = ({ data }) => (
   <Layout>
     <SEO title="Drinks | Affordable Drinking Options In Miami: 2019" />
     <BackgroundSection
@@ -15,6 +15,8 @@ const IndexPage = ({ data }) => (
       title="Drinks"
       styleClass="drinks"
     />
+
+    <DrinksMenu drinks={data.drinks} />
     <section className="py-5">
       <div className="container">
         <Title title="drinks" />
@@ -45,7 +47,25 @@ export const query = graphql`
         }
       }
     }
+    drinks: allContentfulDrinksItem {
+      edges {
+        node {
+          id
+          title
+          description {
+            description
+          }
+          price
+          category
+          image {
+            fluid(maxHeight: 426) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
   }
 `
 
-export default IndexPage
+export default DrinksPage

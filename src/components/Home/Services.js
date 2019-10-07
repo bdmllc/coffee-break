@@ -8,7 +8,7 @@ export default class Services extends Component {
     services: [
       {
         icon: <FaUtensils />,
-        title: "restuarants",
+        title: "restaurants",
         info: "Affordable dining options that only locals know about.",
       },
       {

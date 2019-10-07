@@ -4,6 +4,7 @@
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #000;
+  --mainGreen: #005030;
 }
 body {
   background: var(--mainWhite);
@@ -22,6 +23,9 @@ h6 {
 }
 .text-yellow {
   color: var(--mainYellow) !important;
+}
+.text-green {
+  color: var(--mainGreen) !important;
 }
 .title {
   letter-spacing: 0.3rem;
@@ -80,6 +84,40 @@ h6 {
   background-size: cover;
   /* background-attachment: fixed; */
 }
+.testimonial-background {
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51)
+  );
+  opacity: 1 !important;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4.5rem;
+  /* background-attachment: fixed; */
+  color: white;
+}
+.testimonial-background-2 {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51)
+  );
+  opacity: 1 !important;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4.5rem;
+  /* background-attachment: fixed; */
+  color: white;
+}
 .shop {
   min-height: 50vh;
   display: flex;
@@ -105,18 +143,20 @@ h6 {
 }
 .menu,
 .contact {
-  background: var(--mainGrey);
+  background: white;
 }
 .contact-form {
   background: white;
 }
 .footer {
-  background: var(--mainDark);
+  background: rgb(231, 231, 231);
+  color: #005030;
 }
 
 /* services */
 .services {
-  padding: 4rem 0;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
 }
 .services {
   background: var(--darkGrey);
@@ -192,8 +232,19 @@ h6 {
 .btn-width,
 .btn-width:focus,
 .btn-width:active {
-  width: 65px !important;
+  width: 85px !important;
   font-size: 0.95rem;
   outline: none !important;
   box-shadow: none;
 }
+
+.testimonial-font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* .menu-container {
+  min-width: 70vw;
+} */
